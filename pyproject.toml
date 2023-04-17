@@ -1,0 +1,54 @@
+[tool.pdm]
+[tool.pdm.dev-dependencies]
+dev = [
+    "pytest>=7.3.0",
+    "yapf>=0.32.0",
+    "toml>=0.10.2",
+    "hypothesis>=6.71.0",
+    "pytest-asyncio>=0.21.0",
+    "rich>=13.3.4",
+]
+
+[tool.pdm.scripts]
+test = "pytest -s"
+cli = "python3 cli.py"
+
+[tool.yapf]
+based_on_style = "google"
+spaces_before_comment = 4
+
+[tool.yapfignore]
+ignore_patterns = [
+  "__pycache__/",
+  "__pypackages__/"
+]
+
+[tool.pytest.ini_options]
+addopts = [
+    "--import-mode=importlib",
+    "--ignore=__pypackages__"
+]
+filterwarnings = [
+    "ignore:pkg_resources",
+    "ignore:Streamer is iterated outside of its context"
+]
+
+[project]
+name = ""
+version = ""
+description = ""
+authors = [
+    {name = "andrei.pokhila", email = "andrei.pokhila@gmail.com"},
+]
+dependencies = [
+    "structlog>=23.1.0",
+    "aiostream>=0.4.5",
+    "httpx>=0.24.0",
+    "clickhouse-connect>=0.5.20",
+    "pydantic>=1.10.7",
+    "setuptools>=67.6.1",
+    "numpy>=1.24.2",
+    "python-dotenv>=1.0.0",
+]
+requires-python = ">=3.9"
+license = {text = "MIT"}
