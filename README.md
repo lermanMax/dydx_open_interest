@@ -33,7 +33,7 @@ Or as a CLI for system management
 
 Also:
 
-`pdm run test -k [test_name]` for testing. This is just a shortcut for `prm run pytest -s -k [test_name]`
+`pdm run test -k [test_name]` for testing. This is just a shortcut for `pdm run pytest -s -k [test_name]`
 
 You can run directly "pytest" for testing if you want
 
