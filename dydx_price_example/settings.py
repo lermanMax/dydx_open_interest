@@ -24,5 +24,5 @@ class Settings(BaseSettings):
     candles_granularity_hours: int = 1
 
     class Config:
-        env_prefix = 'dydx_price_example'
+        env_prefix = 'dydx_price_example_'
         env_file = '.env'
