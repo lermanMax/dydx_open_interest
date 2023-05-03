@@ -5,7 +5,7 @@ class Settings(BaseSettings):
     logging: str = "WARNING"
 
     host: str
-    port: int = 8123
+    port: int
     username: str = "default"
     password: SecretStr = ""
 
