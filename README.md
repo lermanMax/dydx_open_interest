@@ -1,10 +1,6 @@
-# Veska Python Boilerplate
+# dydx open interest
 
-This is a setup for python microservices
-
-It contents some business logic to show how code could be structured
-
-There are some ["problems"](https://github.com/GigaTechnologies/veska-python-boilerplate/issues) which should be solved. But as a concept to show - it works just fine
+This is a microservice for obtaining open interest data from the Dydx exchange and loading it into ClickHouse.
 
 
 ## Requirements
